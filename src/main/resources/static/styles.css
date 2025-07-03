@@ -1,21 +1,18 @@
-/* 기본 설정 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
+/* 기본 레이아웃 */
 body {
   margin: 0;
-  padding: 32px;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f5f5f5;
-  color: #212121;
+  padding: 24px;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 /* 제목 */
 h1 {
   text-align: center;
-  font-size: 32px;
-  font-weight: 500;
-  color: #202124;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 /* 네비게이션 링크 */
@@ -24,71 +21,70 @@ h1 {
   margin-bottom: 24px;
 }
 .nav-link a {
-  color: #1a73e8;
+  color: #90caf9;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
 }
 .nav-link a:hover {
   text-decoration: underline;
+  color: #64b5f6;
 }
 
 /* 테이블 */
 table {
-  width: 95%;
-  margin: 0 auto 40px;
+  width: 92%;
+  margin: 0 auto 36px auto;
   border-collapse: collapse;
-  background-color: #ffffff;
-  border-radius: 8px;
+  background-color: #1e1e1e;
+  border: 1px solid #2c2c2c;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 th, td {
   padding: 14px 18px;
-  border-bottom: 1px solid #e0e0e0;
+  border: 1px solid #2c2c2c;
   text-align: center;
   font-size: 15px;
+  color: #e0e0e0;
 }
 th {
-  background-color: #f1f3f4;
-  font-weight: 500;
-  color: #5f6368;
-}
-tr:last-child td {
-  border-bottom: none;
+  background-color: #2c2c2c;
+  font-weight: 600;
 }
 
 /* 입력 폼 */
 .form-container {
-  max-width: 400px;
+  width: 380px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #1e1e1e;
   padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(60, 64, 67, 0.15);
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 .form-row {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .form-row label {
   display: block;
-  font-size: 14px;
-  font-weight: 500;
-  color: #5f6368;
+  font-size: 15px;
+  color: #b0bec5;
   margin-bottom: 6px;
 }
 .form-row input {
   width: 100%;
   padding: 10px 12px;
-  border: 1px solid #dadce0;
+  border: 1px solid #555;
   border-radius: 6px;
+  background-color: #2b2b2b;
   font-size: 14px;
-  transition: border-color 0.2s;
+  color: #ffffff;
 }
 .form-row input:focus {
+  border-color: #64b5f6;
   outline: none;
-  border-color: #1a73e8;
-  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.15);
+  box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.3);
 }
 
 /* 버튼 */
@@ -98,8 +94,8 @@ tr:last-child td {
 }
 .form-actions button {
   padding: 10px 24px;
-  background-color: #1a73e8;
-  color: #fff;
+  background-color: #43a047;
+  color: #ffffff;
   font-weight: 500;
   font-size: 14px;
   border: none;
@@ -108,14 +104,15 @@ tr:last-child td {
   transition: background-color 0.2s;
 }
 .form-actions button:hover {
-  background-color: #1669c1;
+  background-color: #388e3c;
 }
 .form-actions .cancel-link {
   margin-left: 16px;
-  color: #5f6368;
-  font-size: 14px;
+  color: #b0bec5;
   text-decoration: none;
+  font-size: 14px;
 }
 .form-actions .cancel-link:hover {
   text-decoration: underline;
+  color: #eeeeee;
 }
